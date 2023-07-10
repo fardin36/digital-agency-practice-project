@@ -302,13 +302,13 @@ header {
 
 .card {
     height: 50%;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: 5px 5px 15px black;
 }
 
 .card-pic {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .card-content {
