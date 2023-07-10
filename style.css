@@ -19,6 +19,9 @@
     cursor: pointer;
 }
 
+span {
+    color: #ff2323;
+}
 /* this is header section  */
 
 header {
@@ -215,6 +218,8 @@ header {
     height: 100px;
 }
 
+/* this is consultation section  */
+
 .consultation-container {
     display: flex;
     justify-content: center;
@@ -260,4 +265,49 @@ header {
 .appointment-btn:hover {
     color: white;
     background-color: black;
+}
+
+/* this is blog and news section  */
+.blog-container {
+    height: 100vh;
+    padding: 0 15%;
+}
+
+.blog-head {
+    text-align: center;
+}
+
+.blog-head .title {
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+}
+
+.blog-head .description {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.card-pic {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-content {
+    text-align: left;
+    padding: 0 5px 5px 5px;
 }
