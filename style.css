@@ -7,9 +7,12 @@
 }
 
 .btn-primary {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     font-weight: 600;
+    height: 50px;
     padding: 10px 15px;
     border: none;
     border-radius: 20px;
@@ -55,8 +58,8 @@ header {
 .banner-container {
     height: 100vh;
     padding: 0 10%;
-    background-image: url("./asset/image/banner-background.jpg"), 
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-image: url("./asset/image/banner-background.jpg"),
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     background-blend-mode: overlay;
     background-position: center;
     display: flex;
@@ -75,7 +78,7 @@ header {
     color: white;
 }
 
-.banner-title span{
+.banner-title span {
     color: #ff2323;
     display: block;
 }
@@ -93,12 +96,14 @@ header {
     gap: 20px;
 }
 
-.btn-banner-1, .btn-banner-2:hover {
+.btn-banner-1,
+.btn-banner-2:hover {
     background-color: #ff2323;
     color: white;
 }
 
-.btn-banner-2, .btn-banner-1:hover {
+.btn-banner-2,
+.btn-banner-1:hover {
     background-color: white;
     color: #ff2323;
 }
@@ -111,9 +116,9 @@ header {
     align-items: center;
     gap: 5px;
     height: 100vh;
-    padding: 0 5%;
-    background-image: url("./asset/image/footer-bg.png"), 
-    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    padding: 0 5% 50px 5%;
+    background-image: url("./asset/image/footer-bg.png"),
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
     background-blend-mode: overlay;
     background-position: center;
 }
@@ -122,14 +127,19 @@ header {
     width: 50%;
 }
 
-.service-left > .title {
+.service-btn:hover {
+    color: white;
+    background-color: #ff2323;
+}
+
+.service-left>.title {
     font-size: 35px;
     font-weight: 500;
     color: white;
     margin: 20px 0;
 }
 
-.service-left > .title span {
+.service-left>.title span {
     color: #ff2323;
 }
 
@@ -162,12 +172,14 @@ header {
     height: 70px;
     border-radius: 50%;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .author-name {
     color: white;
     font-size: small;
     text-align: left;
+    cursor: pointer;
 }
 
 .author .div-2 {
@@ -195,9 +207,57 @@ header {
     align-items: center;
     padding: 60px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
-.service-icon {
+.service-icon,
+.phone-icon {
     height: 100px;
+}
+
+.consultation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 200px;
+    padding: 0 50px;
+    margin: -75px 10% 0 10%;
+    border-radius: 20px;
+    background-color: #ff2323;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.consultation-number {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 350px;
+    border-right: 2px solid white;
+}
+
+.consultation-number legend {
+    font-size: 13px;
+    font-weight: 500;
     margin-bottom: 5px;
+}
+
+.consultation-number p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.consultation-details {
+    text-align: left;
+    font-size: 15px;
+}
+
+.appointment-btn {
+    font-size: 15px;
+}
+
+.appointment-btn:hover {
+    color: white;
+    background-color: black;
 }
