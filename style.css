@@ -19,6 +19,10 @@
     cursor: pointer;
 }
 
+.icon {
+    height: 25px;
+}
+
 span {
     color: #ff2323;
 }
@@ -231,7 +235,7 @@ header {
     border-radius: 20px;
     background-color: #ff2323;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .consultation-number {
@@ -291,9 +295,9 @@ header {
 
 .cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .card {
@@ -310,4 +314,61 @@ header {
 .card-content {
     text-align: left;
     padding: 0 5px 5px 5px;
+}
+
+/* this is foooter section  */
+.footer-container {
+    height: 50vh;
+    margin: 0 auto;
+    padding: 50px 10% 10px 10%;
+    color: white;
+    background-image: url("./asset/image/footer-bg.png"),
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 50px;
+    align-items: center;
+    color: white;
+}
+
+.agency img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.footer-content legend {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.agency p {
+    margin: 20px 0;
+}
+
+.contact-info .icon {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.copyright {
+    margin: 20px;
+    text-align: center;
+    font-size: small;
 }
